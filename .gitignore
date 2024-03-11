@@ -8,3 +8,40 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
+
+### PhpStorm ###
+.idea/
+*.iml
+
+### Composer ###
+composer.lock
+
+### Logs ###
+*.log
+log/
+
+### Cache ###
+!/var/index.php
+!/var/.htaccess
+cache/
+bin/
+
+### Sessions ###
+/sessions/
+
+### Autres fichiers ###
+.DS_Store
+/.vagrant
+/.vscode
+/_ide_helper.php
+/_ide_helper_models.php
+/phpunit.xml
+Homestead.json
+Homestead.yaml
