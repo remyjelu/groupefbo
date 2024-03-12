@@ -15,24 +15,12 @@ use ApiPlatform\Metadata\ApiResource;
 #[ORM\Entity(repositoryClass: TodoListRepository::class)]
 #[ApiResource(
     operations: [
-        new Get(
-            uriTemplate: '/todolist/{id}',
-        ),
-        new GetCollection(
-            uriTemplate: '/todolist/list',
-        ),
-        new Put(
-            uriTemplate: '/todolist/put/{id}',
-        ),
-        new Post(
-            uriTemplate: '/todolist/post',
-        ),
-        new Patch(
-            uriTemplate: '/todolist/patch/{id}',
-        ),
-        new Delete(
-            uriTemplate: '/todolist/delete/{id}',
-        )
+        new Get(),
+        new GetCollection(),
+        new Put(),
+        new Post(),
+        new Patch(),
+        new Delete()
     ]
 )]
 class TodoList
